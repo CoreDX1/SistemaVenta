@@ -15,4 +15,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\POS.Apilication\POS.Apilication.csproj" />
+    <ProjectReference Include="..\POS.Infrastructure\POS.Infrastructure.csproj" />
+    <ProjectReference Include="..\POS.Utilities\POS.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
