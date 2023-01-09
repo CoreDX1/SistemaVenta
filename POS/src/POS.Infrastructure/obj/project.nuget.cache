@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "C4PXqiD24UxhBp94F2YmhIJiK+oZCfGL7KXK0e5sfmykMEPqpPjoOeP/Imlz10+UYHst26Z8+E45vX97/3cHvA==",
+  "dgSpecHash": "MKfztOV8tFWlpPSezfyqx4GW7Fhn6Jzib16theG6OEP3bZ5ebTY6kApFz7D6RKfEzj0BqGoyeZU5wjkYMPnWqA==",
   "success": true,
   "projectFilePath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "/home/core/.nuget/packages/system.linq.dynamic.core/1.2.24/system.linq.dynamic.core.1.2.24.nupkg.sha512",
     "/home/core/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.1/microsoft.aspnetcore.app.ref.7.0.1.nupkg.sha512"
   ],
   "logs": []
