@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qyNfRu4EKN/DuzEvi7qVRJGvTNzODTiSkQtb6+8xRQJ/DEVbC6mMRS7grvb3vMvAd1OSpDlscqpIyLboorO9hw==",
+  "success": true,
+  "projectFilePath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/POS.Apilication.csproj",
+  "expectedPackageFiles": [
+    "/home/core/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.1/microsoft.aspnetcore.app.ref.7.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
