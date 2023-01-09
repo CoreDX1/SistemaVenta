@@ -1,11 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "1u1TA9OUmdNfR9Zp9s/JoLaevnFJA9EEx8EF971rDuB7rs+uVBBYYzvnPg665CTcfOp8PkxsMM1SatTkLCStHg==",
+  "dgSpecHash": "QK07mFVNnS28U5WpWjfZRMvQL8fHEcCR/LQ/GlkobrGg+Lanhcnt9U7/mjYaK0Md/0FyKeKYGUf6fMysXduAaA==",
   "success": true,
   "projectFilePath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/POS.Apilication.csproj",
   "expectedPackageFiles": [
     "/home/core/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/home/core/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "/home/core/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
+    "/home/core/.nuget/packages/azure.storage.blobs/12.14.1/azure.storage.blobs.12.14.1.nupkg.sha512",
+    "/home/core/.nuget/packages/azure.storage.common/12.13.0/azure.storage.common.12.13.0.nupkg.sha512",
+    "/home/core/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/core/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/core/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/core/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/home/core/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/core/.nuget/packages/system.diagnostics.diagnosticsource/4.6.0/system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "/home/core/.nuget/packages/system.io.hashing/6.0.0/system.io.hashing.6.0.0.nupkg.sha512",
+    "/home/core/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
+    "/home/core/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/home/core/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/home/core/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
+    "/home/core/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
+    "/home/core/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/home/core/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.1/microsoft.aspnetcore.app.ref.7.0.1.nupkg.sha512"
   ],
   "logs": []
