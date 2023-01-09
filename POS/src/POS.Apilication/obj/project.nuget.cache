@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LDKPf15IZiO2QRFxnQAhiu/x2TCUZR7IISaQg/Yt8hx/+y2u6AMHf5hCeZdvEuuGVdNedYV6vVt73qM/uzeV2A==",
+  "dgSpecHash": "z3Dmc4MiAebWSP0HZFblHZ5D3cMtrYIclc6oGJEuaNS3P3OhQey6SG0gSbboBaWyjbrMdNF41etsPGS9X5bsOg==",
   "success": true,
   "projectFilePath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/POS.Apilication.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,9 @@
     "/home/core/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/home/core/.nuget/packages/azure.storage.blobs/12.14.1/azure.storage.blobs.12.14.1.nupkg.sha512",
     "/home/core/.nuget/packages/azure.storage.common/12.13.0/azure.storage.common.12.13.0.nupkg.sha512",
-    "/home/core/.nuget/packages/fluentvalidation/11.4.0/fluentvalidation.11.4.0.nupkg.sha512",
+    "/home/core/.nuget/packages/fluentvalidation/11.2.1/fluentvalidation.11.2.1.nupkg.sha512",
+    "/home/core/.nuget/packages/fluentvalidation.aspnetcore/11.2.2/fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "/home/core/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.2.1/fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "/home/core/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/core/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/core/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

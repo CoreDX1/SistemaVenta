@@ -50,9 +50,9 @@
               "target": "Package",
               "version": "[12.14.1, )"
             },
-            "FluentValidation": {
+            "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[11.4.0, )"
+              "version": "[11.2.2, )"
             }
           },
           "imports": [
