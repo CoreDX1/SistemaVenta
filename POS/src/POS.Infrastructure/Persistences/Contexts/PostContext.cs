@@ -59,15 +59,6 @@ public partial class PostContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<DocumentType>(entity =>
-        {
-            entity.HasKey(e => e.DocumentTypeId).HasName("PK__Document__DBA390E14B38F678");
-
-            entity.Property(e => e.Abbreviation).HasMaxLength(5).IsUnicode(false);
-            entity.Property(e => e.Code).HasMaxLength(10).IsUnicode(false);
-            entity.Property(e => e.Name).HasMaxLength(255).IsUnicode(false);
-        });
-
         modelBuilder.Entity<Menu>(entity =>
         {
             entity.HasKey(e => e.MenuId).HasName("PK__Menus__C99ED2301BE0FEE2");
