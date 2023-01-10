@@ -59,13 +59,6 @@ public partial class PostContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Department>(entity =>
-        {
-            entity.HasKey(e => e.DepartmentId).HasName("PK__Departme__B2079BED2C528947");
-
-            entity.Property(e => e.Name).HasMaxLength(100).IsUnicode(false);
-        });
-
         modelBuilder.Entity<District>(entity =>
         {
             entity.HasKey(e => e.DistrictId).HasName("PK__District__85FDA4C6682F76E3");
