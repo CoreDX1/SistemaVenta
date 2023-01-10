@@ -60,28 +60,6 @@ public partial class PostContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 
-        modelBuilder.Entity<UserRole>(entity =>
-        {
-            entity.HasKey(e => e.UserRoleId).HasName("PK__UserRole__3D978A35CB25F9A4");
-
-            entity
-                .HasOne(d => d.BranchOffice)
-                .WithMany(p => p.UserRoles)
-                .HasForeignKey(d => d.BranchOfficeId)
-                .HasConstraintName("FK__UserRoles__Branc__5AEE82B9");
-
-            entity
-                .HasOne(d => d.Role)
-                .WithMany(p => p.UserRoles)
-                .HasForeignKey(d => d.RoleId)
-                .HasConstraintName("FK__UserRoles__RoleI__5BE2A6F2");
-
-            entity
-                .HasOne(d => d.User)
-                .WithMany(p => p.UserRoles)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__UserRoles__UserI__5CD6CB2B");
-        });
 
         modelBuilder.Entity<UsersBranchOffice>(entity =>
         {
