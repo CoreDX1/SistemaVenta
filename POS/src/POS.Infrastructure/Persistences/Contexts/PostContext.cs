@@ -59,33 +59,6 @@ public partial class PostContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<BranchOffice>(entity => { });
-
-        modelBuilder.Entity<Business>(entity =>
-        {
-            entity.HasKey(e => e.BusinessId).HasName("PK__Business__F1EAA36E4F215095");
-
-            entity.ToTable("Business");
-
-            entity.Property(e => e.Address).IsUnicode(false);
-            entity.Property(e => e.BusinessName).HasMaxLength(100).IsUnicode(false);
-            entity.Property(e => e.Code).HasMaxLength(100).IsUnicode(false);
-            entity.Property(e => e.CreationDate).HasColumnType("datetime");
-            entity.Property(e => e.Email).HasMaxLength(100).IsUnicode(false);
-            entity.Property(e => e.Logo).IsUnicode(false);
-            entity.Property(e => e.Mision).IsUnicode(false);
-            entity.Property(e => e.Phone).HasMaxLength(100).IsUnicode(false);
-            entity.Property(e => e.Ruc).HasMaxLength(11).IsUnicode(false);
-            entity.Property(e => e.Vision).IsUnicode(false);
-
-            entity
-                .HasOne(d => d.District)
-                .WithMany(p => p.Businesses)
-                .HasForeignKey(d => d.DistrictId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Business__Distri__4AB81AF0");
-        });
-
         modelBuilder.Entity<Category>(entity =>
         {
             entity.HasKey(e => e.CategoryId).HasName("PK__Categori__19093A0B25316C85");
