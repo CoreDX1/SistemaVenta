@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using POS.Infrastructure.Persistences.Contexts;
+using POS.Infrastructure.Persistences.Interfaces;
+using POS.Infrastructure.Persistences.Repositories;
 
 namespace POS.Infrastructure.Extensions
 {
@@ -21,6 +23,8 @@ namespace POS.Infrastructure.Extensions
                     ),
                 ServiceLifetime.Transient
             );
+            // Registar el patron de diseño unit of work como siclo de vida transient  => se crea una nueva instancia cada vez que se solicita
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             return services;
         }
     }
