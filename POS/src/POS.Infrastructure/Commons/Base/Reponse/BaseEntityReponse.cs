@@ -1,4 +1,4 @@
-namespace POS.Infrastructure.Commons.Base;
+namespace POS.Infrastructure.Commons.Base.Request;
     // Devolver los registros de la base de datos
     public class BaseEntityReponse<T>
     {
