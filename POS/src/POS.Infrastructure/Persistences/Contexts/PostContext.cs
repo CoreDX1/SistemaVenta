@@ -60,29 +60,6 @@ public partial class PostContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 
-
-
-
-        modelBuilder.Entity<SaleDetail>(entity =>
-        {
-            entity.HasKey(e => e.SaleDetailId).HasName("PK__SaleDeta__70DB14FE08710A27");
-
-            entity.Property(e => e.Discount).HasColumnType("decimal(18, 2)");
-            entity.Property(e => e.Price).HasColumnType("decimal(18, 2)");
-
-            entity
-                .HasOne(d => d.Product)
-                .WithMany(p => p.SaleDetails)
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__SaleDetai__Produ__571DF1D5");
-
-            entity
-                .HasOne(d => d.Sale)
-                .WithMany(p => p.SaleDetails)
-                .HasForeignKey(d => d.SaleId)
-                .HasConstraintName("FK__SaleDetai__SaleI__5812160E");
-        });
-
         modelBuilder.Entity<User>(entity =>
         {
             entity.HasKey(e => e.UserId).HasName("PK__Users__1788CC4CE28B33A8");
