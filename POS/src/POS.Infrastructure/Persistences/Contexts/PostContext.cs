@@ -59,19 +59,6 @@ public partial class PostContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Province>(entity =>
-        {
-            entity.HasKey(e => e.ProvinceId).HasName("PK__Province__FD0A6F83D9637F02");
-
-            entity.Property(e => e.Name).HasMaxLength(100).IsUnicode(false);
-
-            entity
-                .HasOne(d => d.Department)
-                .WithMany(p => p.Provinces)
-                .HasForeignKey(d => d.DepartmentId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Provinces__Depar__52593CB8");
-        });
 
         modelBuilder.Entity<Purcharse>(entity =>
         {
