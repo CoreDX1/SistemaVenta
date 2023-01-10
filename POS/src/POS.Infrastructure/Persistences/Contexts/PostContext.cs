@@ -60,26 +60,6 @@ public partial class PostContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 
-        modelBuilder.Entity<Purcharse>(entity =>
-        {
-            entity.HasKey(e => e.PurcharseId).HasName("PK__Purchars__A98C674B25AFC137");
-
-            entity.Property(e => e.Tax).HasColumnType("decimal(18, 2)");
-            entity.Property(e => e.Total).HasColumnType("decimal(18, 2)");
-
-            entity
-                .HasOne(d => d.Provider)
-                .WithMany(p => p.Purcharses)
-                .HasForeignKey(d => d.ProviderId)
-                .HasConstraintName("FK__Purcharse__Provi__5535A963");
-
-            entity
-                .HasOne(d => d.User)
-                .WithMany(p => p.Purcharses)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Purcharse__UserI__5629CD9C");
-        });
-
         modelBuilder.Entity<PurcharseDetail>(entity =>
         {
             entity.HasKey(e => e.PurcharseDetailId).HasName("PK__Purchars__7353248BFF8F3A84");
