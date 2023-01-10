@@ -25,7 +25,17 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj": {
+                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj"
+              },
+              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj": {
+                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj"
+              },
+              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj": {
+                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -55,6 +65,212 @@
               "version": "[11.2.2, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.1, 7.0.1]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj",
+        "projectName": "POS.Domain",
+        "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj",
+        "packagesPath": "/home/core/.nuget/packages/",
+        "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/core/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.1, 7.0.1]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj",
+        "projectName": "POS.Infrastructure",
+        "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj",
+        "packagesPath": "/home/core/.nuget/packages/",
+        "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/core/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj": {
+                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj"
+              },
+              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj": {
+                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.2.24, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.1, 7.0.1]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj",
+        "projectName": "POS.Utilities",
+        "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj",
+        "packagesPath": "/home/core/.nuget/packages/",
+        "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/core/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
