@@ -2,9 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using POS.Domain.Entities;
 
-namespace POS.Infrastructure.Persistences.Contexts.Configuration.BusinessConfigurations;
+namespace POS.Infrastructure.Persistences.Contexts.Configuration.BusinessConfiguration;
 
-public class BusinessConfigurations : IEntityTypeConfiguration<Business>
+public class BusinessConfigurations: IEntityTypeConfiguration<Business>
 {
     public void Configure(EntityTypeBuilder<Business> builder)
     {

@@ -2,9 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using POS.Domain.Entities;
 
-namespace POS.Infrastructure.Persistences.Contexts.Configuration.CategoryConfigurations;
+namespace POS.Infrastructure.Persistences.Contexts.Configuration.CategoryConfiguration;
 
-public class CategoryConfigurations : IEntityTypeConfiguration<Category>
+public class CategoryConfiguration : IEntityTypeConfiguration<Category>
 {
     public void Configure(EntityTypeBuilder<Category> builder)
     {
