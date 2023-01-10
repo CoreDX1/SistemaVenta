@@ -62,27 +62,6 @@ public partial class PostContext : DbContext
 
 
 
-  
-
-        modelBuilder.Entity<Sale>(entity =>
-        {
-            entity.HasKey(e => e.SaleId).HasName("PK__Sales__1EE3C3FF532CA1B2");
-
-            entity.Property(e => e.Tax).HasColumnType("decimal(18, 2)");
-            entity.Property(e => e.Total).HasColumnType("decimal(18, 2)");
-
-            entity
-                .HasOne(d => d.Client)
-                .WithMany(p => p.Sales)
-                .HasForeignKey(d => d.ClientId)
-                .HasConstraintName("FK__Sales__ClientId__59063A47");
-
-            entity
-                .HasOne(d => d.User)
-                .WithMany(p => p.Sales)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Sales__UserId__59FA5E80");
-        });
 
         modelBuilder.Entity<SaleDetail>(entity =>
         {
