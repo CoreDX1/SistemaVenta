@@ -6,10 +6,10 @@ namespace POS.Infrastructure.Persistences.Contexts.Configuration.RoleConfigurati
 
 public class RoleConfiguration : IEntityTypeConfiguration<Role>
 {
-  public void Configure(EntityTypeBuilder<Role> builder)
-  {
-  builder.HasKey(e => e.RoleId).HasName("PK__Roles__8AFACE1AE73D374F");
+    public void Configure(EntityTypeBuilder<Role> builder)
+    {
+        builder.HasKey(e => e.RoleId).HasName("PK__Roles__8AFACE1AE73D374F");
 
-            builder.Property(e => e.Description).HasMaxLength(50).IsUnicode(false);
-  }
+        builder.Property(e => e.Description).HasMaxLength(50).IsUnicode(false);
+    }
 }

@@ -6,19 +6,19 @@ namespace POS.Infrastructure.Persistences.Contexts.Configuration.ProviderConfigu
 
 public class ProviderConfiguration : IEntityTypeConfiguration<Provider>
 {
-  public void Configure(EntityTypeBuilder<Provider> builder)
-  {
-builder.HasKey(e => e.ProviderId).HasName("PK__Provider__B54C687DB0B00298");
+    public void Configure(EntityTypeBuilder<Provider> builder)
+    {
+        builder.HasKey(e => e.ProviderId).HasName("PK__Provider__B54C687DB0B00298");
 
-            builder.Property(e => e.DocumentNumber).HasMaxLength(20).IsUnicode(false);
-            builder.Property(e => e.Email).HasMaxLength(255);
-            builder.Property(e => e.Phone).HasMaxLength(15);
+        builder.Property(e => e.DocumentNumber).HasMaxLength(20).IsUnicode(false);
+        builder.Property(e => e.Email).HasMaxLength(255);
+        builder.Property(e => e.Phone).HasMaxLength(15);
 
-            builder
-                .HasOne(d => d.DocumentType)
-                .WithMany(p => p.Providers)
-                .HasForeignKey(d => d.DocumentTypeId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Providers__Docum__5165187F");
-  }
+        builder
+            .HasOne(d => d.DocumentType)
+            .WithMany(p => p.Providers)
+            .HasForeignKey(d => d.DocumentTypeId)
+            .OnDelete(DeleteBehavior.ClientSetNull)
+            .HasConstraintName("FK__Providers__Docum__5165187F");
+    }
 }
