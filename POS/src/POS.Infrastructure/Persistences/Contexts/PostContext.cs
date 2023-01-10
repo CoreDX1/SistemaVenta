@@ -59,28 +59,6 @@ public partial class PostContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Product>(entity =>
-        {
-            entity.HasKey(e => e.ProductId).HasName("PK__Products__B40CC6CDC8C288AF");
-
-            entity.Property(e => e.Name).HasMaxLength(50);
-            entity.Property(e => e.SellPrice).HasColumnType("decimal(18, 2)");
-
-            entity
-                .HasOne(d => d.Category)
-                .WithMany(p => p.Products)
-                .HasForeignKey(d => d.CategoryId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Products__Catego__4F7CD00D");
-
-            entity
-                .HasOne(d => d.Provider)
-                .WithMany(p => p.Products)
-                .HasForeignKey(d => d.ProviderId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Products__Provid__5070F446");
-        });
-
         modelBuilder.Entity<Provider>(entity =>
         {
             entity.HasKey(e => e.ProviderId).HasName("PK__Provider__B54C687DB0B00298");
