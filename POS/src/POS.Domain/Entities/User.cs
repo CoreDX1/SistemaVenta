@@ -35,5 +35,6 @@ public partial class User
 
     public virtual ICollection<UserRole> UserRoles { get; } = new List<UserRole>();
 
-    public virtual ICollection<UsersBranchOffice> UsersBranchOffices { get; } = new List<UsersBranchOffice>();
+    public virtual ICollection<UsersBranchOffice> UsersBranchOffices { get; } =
+        new List<UsersBranchOffice>();
 }

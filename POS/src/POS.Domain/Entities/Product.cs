@@ -39,7 +39,8 @@ public partial class Product
 
     public virtual Provider Provider { get; set; } = null!;
 
-    public virtual ICollection<PurcharseDetail> PurcharseDetails { get; } = new List<PurcharseDetail>();
+    public virtual ICollection<PurcharseDetail> PurcharseDetails { get; } =
+        new List<PurcharseDetail>();
 
     public virtual ICollection<SaleDetail> SaleDetails { get; } = new List<SaleDetail>();
 }

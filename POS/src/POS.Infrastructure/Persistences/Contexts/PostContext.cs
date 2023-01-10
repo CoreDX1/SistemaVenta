@@ -6,14 +6,9 @@ namespace POS.Domain.Entities;
 
 public partial class PostContext : DbContext
 {
-    public PostContext()
-    {
-    }
+    public PostContext() { }
 
-    public PostContext(DbContextOptions<PostContext> options)
-        : base(options)
-    {
-    }
+    public PostContext(DbContextOptions<PostContext> options) : base(options) { }
 
     public virtual DbSet<BranchOffice> BranchOffices { get; set; }
 
@@ -57,41 +52,14 @@ public partial class PostContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=localhost;Database=POST;TrustServerCertificate=True;User id=sa;Password=index#12345");
+        =>
+        optionsBuilder.UseSqlServer(
+            "Server=localhost;Database=POST;TrustServerCertificate=True;User id=sa;Password=index#12345"
+        );
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<BranchOffice>(entity =>
-        {
-            entity.HasKey(e => e.BranchOfficeId).HasName("PK__BranchOf__27247FF9F31088FB");
-
-            entity.Property(e => e.Address).IsUnicode(false);
-            entity.Property(e => e.Code)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-            entity.Property(e => e.Description)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-            entity.Property(e => e.Email)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-            entity.Property(e => e.Name)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-            entity.Property(e => e.Phone)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-
-            entity.HasOne(d => d.Business).WithMany(p => p.BranchOffices)
-                .HasForeignKey(d => d.BusinessId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__BranchOff__Busin__48CFD27E");
-
-            entity.HasOne(d => d.District).WithMany(p => p.BranchOffices)
-                .HasForeignKey(d => d.DistrictId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__BranchOff__Distr__49C3F6B7");
-        });
+        modelBuilder.Entity<BranchOffice>(entity => { });
 
         modelBuilder.Entity<Business>(entity =>
         {
@@ -100,27 +68,19 @@ public partial class PostContext : DbContext
             entity.ToTable("Business");
 
             entity.Property(e => e.Address).IsUnicode(false);
-            entity.Property(e => e.BusinessName)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-            entity.Property(e => e.Code)
-                .HasMaxLength(100)
-                .IsUnicode(false);
+            entity.Property(e => e.BusinessName).HasMaxLength(100).IsUnicode(false);
+            entity.Property(e => e.Code).HasMaxLength(100).IsUnicode(false);
             entity.Property(e => e.CreationDate).HasColumnType("datetime");
-            entity.Property(e => e.Email)
-                .HasMaxLength(100)
-                .IsUnicode(false);
+            entity.Property(e => e.Email).HasMaxLength(100).IsUnicode(false);
             entity.Property(e => e.Logo).IsUnicode(false);
             entity.Property(e => e.Mision).IsUnicode(false);
-            entity.Property(e => e.Phone)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-            entity.Property(e => e.Ruc)
-                .HasMaxLength(11)
-                .IsUnicode(false);
+            entity.Property(e => e.Phone).HasMaxLength(100).IsUnicode(false);
+            entity.Property(e => e.Ruc).HasMaxLength(11).IsUnicode(false);
             entity.Property(e => e.Vision).IsUnicode(false);
 
-            entity.HasOne(d => d.District).WithMany(p => p.Businesses)
+            entity
+                .HasOne(d => d.District)
+                .WithMany(p => p.Businesses)
                 .HasForeignKey(d => d.DistrictId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Business__Distri__4AB81AF0");
@@ -138,20 +98,14 @@ public partial class PostContext : DbContext
             entity.HasKey(e => e.ClientId).HasName("PK__Clients__E67E1A24066ECFCE");
 
             entity.Property(e => e.Address).IsUnicode(false);
-            entity.Property(e => e.DocumentNumber)
-                .HasMaxLength(20)
-                .IsUnicode(false);
-            entity.Property(e => e.Email)
-                .HasMaxLength(255)
-                .IsUnicode(false);
-            entity.Property(e => e.Name)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-            entity.Property(e => e.Phone)
-                .HasMaxLength(20)
-                .IsUnicode(false);
+            entity.Property(e => e.DocumentNumber).HasMaxLength(20).IsUnicode(false);
+            entity.Property(e => e.Email).HasMaxLength(255).IsUnicode(false);
+            entity.Property(e => e.Name).HasMaxLength(100).IsUnicode(false);
+            entity.Property(e => e.Phone).HasMaxLength(20).IsUnicode(false);
 
-            entity.HasOne(d => d.DocumentType).WithMany(p => p.Clients)
+            entity
+                .HasOne(d => d.DocumentType)
+                .WithMany(p => p.Clients)
                 .HasForeignKey(d => d.DocumentTypeId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Clients__Documen__4BAC3F29");
@@ -161,20 +115,18 @@ public partial class PostContext : DbContext
         {
             entity.HasKey(e => e.DepartmentId).HasName("PK__Departme__B2079BED2C528947");
 
-            entity.Property(e => e.Name)
-                .HasMaxLength(100)
-                .IsUnicode(false);
+            entity.Property(e => e.Name).HasMaxLength(100).IsUnicode(false);
         });
 
         modelBuilder.Entity<District>(entity =>
         {
             entity.HasKey(e => e.DistrictId).HasName("PK__District__85FDA4C6682F76E3");
 
-            entity.Property(e => e.Name)
-                .HasMaxLength(100)
-                .IsUnicode(false);
+            entity.Property(e => e.Name).HasMaxLength(100).IsUnicode(false);
 
-            entity.HasOne(d => d.Province).WithMany(p => p.Districts)
+            entity
+                .HasOne(d => d.Province)
+                .WithMany(p => p.Districts)
                 .HasForeignKey(d => d.ProvinceId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Districts_Provinces");
@@ -184,42 +136,33 @@ public partial class PostContext : DbContext
         {
             entity.HasKey(e => e.DocumentTypeId).HasName("PK__Document__DBA390E14B38F678");
 
-            entity.Property(e => e.Abbreviation)
-                .HasMaxLength(5)
-                .IsUnicode(false);
-            entity.Property(e => e.Code)
-                .HasMaxLength(10)
-                .IsUnicode(false);
-            entity.Property(e => e.Name)
-                .HasMaxLength(255)
-                .IsUnicode(false);
+            entity.Property(e => e.Abbreviation).HasMaxLength(5).IsUnicode(false);
+            entity.Property(e => e.Code).HasMaxLength(10).IsUnicode(false);
+            entity.Property(e => e.Name).HasMaxLength(255).IsUnicode(false);
         });
 
         modelBuilder.Entity<Menu>(entity =>
         {
             entity.HasKey(e => e.MenuId).HasName("PK__Menus__C99ED2301BE0FEE2");
 
-            entity.Property(e => e.Icon)
-                .HasMaxLength(50)
-                .IsUnicode(false);
-            entity.Property(e => e.Name)
-                .HasMaxLength(150)
-                .IsUnicode(false);
-            entity.Property(e => e.Url)
-                .HasMaxLength(150)
-                .IsUnicode(false)
-                .HasColumnName("URL");
+            entity.Property(e => e.Icon).HasMaxLength(50).IsUnicode(false);
+            entity.Property(e => e.Name).HasMaxLength(150).IsUnicode(false);
+            entity.Property(e => e.Url).HasMaxLength(150).IsUnicode(false).HasColumnName("URL");
         });
 
         modelBuilder.Entity<MenuRole>(entity =>
         {
             entity.HasKey(e => e.MenuRolId).HasName("PK__MenuRole__6640AD0CBCE9D971");
 
-            entity.HasOne(d => d.Menu).WithMany(p => p.MenuRoles)
+            entity
+                .HasOne(d => d.Menu)
+                .WithMany(p => p.MenuRoles)
                 .HasForeignKey(d => d.MenuId)
                 .HasConstraintName("FK_MenuRoles_Menu");
 
-            entity.HasOne(d => d.Role).WithMany(p => p.MenuRoles)
+            entity
+                .HasOne(d => d.Role)
+                .WithMany(p => p.MenuRoles)
                 .HasForeignKey(d => d.RoleId)
                 .HasConstraintName("FK_MenuRoles_Roles");
         });
@@ -231,12 +174,16 @@ public partial class PostContext : DbContext
             entity.Property(e => e.Name).HasMaxLength(50);
             entity.Property(e => e.SellPrice).HasColumnType("decimal(18, 2)");
 
-            entity.HasOne(d => d.Category).WithMany(p => p.Products)
+            entity
+                .HasOne(d => d.Category)
+                .WithMany(p => p.Products)
                 .HasForeignKey(d => d.CategoryId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Products__Catego__4F7CD00D");
 
-            entity.HasOne(d => d.Provider).WithMany(p => p.Products)
+            entity
+                .HasOne(d => d.Provider)
+                .WithMany(p => p.Products)
                 .HasForeignKey(d => d.ProviderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Products__Provid__5070F446");
@@ -246,13 +193,13 @@ public partial class PostContext : DbContext
         {
             entity.HasKey(e => e.ProviderId).HasName("PK__Provider__B54C687DB0B00298");
 
-            entity.Property(e => e.DocumentNumber)
-                .HasMaxLength(20)
-                .IsUnicode(false);
+            entity.Property(e => e.DocumentNumber).HasMaxLength(20).IsUnicode(false);
             entity.Property(e => e.Email).HasMaxLength(255);
             entity.Property(e => e.Phone).HasMaxLength(15);
 
-            entity.HasOne(d => d.DocumentType).WithMany(p => p.Providers)
+            entity
+                .HasOne(d => d.DocumentType)
+                .WithMany(p => p.Providers)
                 .HasForeignKey(d => d.DocumentTypeId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Providers__Docum__5165187F");
@@ -262,11 +209,11 @@ public partial class PostContext : DbContext
         {
             entity.HasKey(e => e.ProvinceId).HasName("PK__Province__FD0A6F83D9637F02");
 
-            entity.Property(e => e.Name)
-                .HasMaxLength(100)
-                .IsUnicode(false);
+            entity.Property(e => e.Name).HasMaxLength(100).IsUnicode(false);
 
-            entity.HasOne(d => d.Department).WithMany(p => p.Provinces)
+            entity
+                .HasOne(d => d.Department)
+                .WithMany(p => p.Provinces)
                 .HasForeignKey(d => d.DepartmentId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Provinces__Depar__52593CB8");
@@ -279,11 +226,15 @@ public partial class PostContext : DbContext
             entity.Property(e => e.Tax).HasColumnType("decimal(18, 2)");
             entity.Property(e => e.Total).HasColumnType("decimal(18, 2)");
 
-            entity.HasOne(d => d.Provider).WithMany(p => p.Purcharses)
+            entity
+                .HasOne(d => d.Provider)
+                .WithMany(p => p.Purcharses)
                 .HasForeignKey(d => d.ProviderId)
                 .HasConstraintName("FK__Purcharse__Provi__5535A963");
 
-            entity.HasOne(d => d.User).WithMany(p => p.Purcharses)
+            entity
+                .HasOne(d => d.User)
+                .WithMany(p => p.Purcharses)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK__Purcharse__UserI__5629CD9C");
         });
@@ -294,11 +245,15 @@ public partial class PostContext : DbContext
 
             entity.Property(e => e.Price).HasColumnType("decimal(18, 2)");
 
-            entity.HasOne(d => d.Product).WithMany(p => p.PurcharseDetails)
+            entity
+                .HasOne(d => d.Product)
+                .WithMany(p => p.PurcharseDetails)
                 .HasForeignKey(d => d.ProductId)
                 .HasConstraintName("FK__Purcharse__Produ__534D60F1");
 
-            entity.HasOne(d => d.Purcharse).WithMany(p => p.PurcharseDetails)
+            entity
+                .HasOne(d => d.Purcharse)
+                .WithMany(p => p.PurcharseDetails)
                 .HasForeignKey(d => d.PurcharseId)
                 .HasConstraintName("FK__Purcharse__Purch__5441852A");
         });
@@ -307,9 +262,7 @@ public partial class PostContext : DbContext
         {
             entity.HasKey(e => e.RoleId).HasName("PK__Roles__8AFACE1AE73D374F");
 
-            entity.Property(e => e.Description)
-                .HasMaxLength(50)
-                .IsUnicode(false);
+            entity.Property(e => e.Description).HasMaxLength(50).IsUnicode(false);
         });
 
         modelBuilder.Entity<Sale>(entity =>
@@ -319,11 +272,15 @@ public partial class PostContext : DbContext
             entity.Property(e => e.Tax).HasColumnType("decimal(18, 2)");
             entity.Property(e => e.Total).HasColumnType("decimal(18, 2)");
 
-            entity.HasOne(d => d.Client).WithMany(p => p.Sales)
+            entity
+                .HasOne(d => d.Client)
+                .WithMany(p => p.Sales)
                 .HasForeignKey(d => d.ClientId)
                 .HasConstraintName("FK__Sales__ClientId__59063A47");
 
-            entity.HasOne(d => d.User).WithMany(p => p.Sales)
+            entity
+                .HasOne(d => d.User)
+                .WithMany(p => p.Sales)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK__Sales__UserId__59FA5E80");
         });
@@ -335,11 +292,15 @@ public partial class PostContext : DbContext
             entity.Property(e => e.Discount).HasColumnType("decimal(18, 2)");
             entity.Property(e => e.Price).HasColumnType("decimal(18, 2)");
 
-            entity.HasOne(d => d.Product).WithMany(p => p.SaleDetails)
+            entity
+                .HasOne(d => d.Product)
+                .WithMany(p => p.SaleDetails)
                 .HasForeignKey(d => d.ProductId)
                 .HasConstraintName("FK__SaleDetai__Produ__571DF1D5");
 
-            entity.HasOne(d => d.Sale).WithMany(p => p.SaleDetails)
+            entity
+                .HasOne(d => d.Sale)
+                .WithMany(p => p.SaleDetails)
                 .HasForeignKey(d => d.SaleId)
                 .HasConstraintName("FK__SaleDetai__SaleI__5812160E");
         });
@@ -351,24 +312,28 @@ public partial class PostContext : DbContext
             entity.Property(e => e.Email).IsUnicode(false);
             entity.Property(e => e.Image).IsUnicode(false);
             entity.Property(e => e.Password).IsUnicode(false);
-            entity.Property(e => e.UserName)
-                .HasMaxLength(50)
-                .IsUnicode(false);
+            entity.Property(e => e.UserName).HasMaxLength(50).IsUnicode(false);
         });
 
         modelBuilder.Entity<UserRole>(entity =>
         {
             entity.HasKey(e => e.UserRoleId).HasName("PK__UserRole__3D978A35CB25F9A4");
 
-            entity.HasOne(d => d.BranchOffice).WithMany(p => p.UserRoles)
+            entity
+                .HasOne(d => d.BranchOffice)
+                .WithMany(p => p.UserRoles)
                 .HasForeignKey(d => d.BranchOfficeId)
                 .HasConstraintName("FK__UserRoles__Branc__5AEE82B9");
 
-            entity.HasOne(d => d.Role).WithMany(p => p.UserRoles)
+            entity
+                .HasOne(d => d.Role)
+                .WithMany(p => p.UserRoles)
                 .HasForeignKey(d => d.RoleId)
                 .HasConstraintName("FK__UserRoles__RoleI__5BE2A6F2");
 
-            entity.HasOne(d => d.User).WithMany(p => p.UserRoles)
+            entity
+                .HasOne(d => d.User)
+                .WithMany(p => p.UserRoles)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK__UserRoles__UserI__5CD6CB2B");
         });
@@ -377,11 +342,15 @@ public partial class PostContext : DbContext
         {
             entity.HasKey(e => e.UserBranchOfficeId).HasName("PK__UsersBra__7D1E804A22997BF4");
 
-            entity.HasOne(d => d.BranchOffice).WithMany(p => p.UsersBranchOffices)
+            entity
+                .HasOne(d => d.BranchOffice)
+                .WithMany(p => p.UsersBranchOffices)
                 .HasForeignKey(d => d.BranchOfficeId)
                 .HasConstraintName("FK__UsersBran__Branc__5DCAEF64");
 
-            entity.HasOne(d => d.User).WithMany(p => p.UsersBranchOffices)
+            entity
+                .HasOne(d => d.User)
+                .WithMany(p => p.UsersBranchOffices)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK__UsersBran__UserI__5EBF139D");
         });

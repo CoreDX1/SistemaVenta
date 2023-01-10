@@ -33,7 +33,8 @@ public partial class Purcharse
 
     public virtual Provider? Provider { get; set; }
 
-    public virtual ICollection<PurcharseDetail> PurcharseDetails { get; } = new List<PurcharseDetail>();
+    public virtual ICollection<PurcharseDetail> PurcharseDetails { get; } =
+        new List<PurcharseDetail>();
 
     public virtual User? User { get; set; }
 }
