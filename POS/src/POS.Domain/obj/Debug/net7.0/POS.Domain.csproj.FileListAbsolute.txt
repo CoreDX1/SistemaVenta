@@ -1,0 +1,14 @@
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/bin/Debug/net7.0/POS.Domain.deps.json
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/bin/Debug/net7.0/POS.Domain.runtimeconfig.json
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/bin/Debug/net7.0/POS.Domain.dll
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/bin/Debug/net7.0/POS.Domain.pdb
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/Debug/net7.0/POS.Domain.csproj.AssemblyReference.cache
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/Debug/net7.0/POS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/Debug/net7.0/POS.Domain.AssemblyInfoInputs.cache
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/Debug/net7.0/POS.Domain.AssemblyInfo.cs
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/Debug/net7.0/POS.Domain.csproj.CoreCompileInputs.cache
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/Debug/net7.0/POS.Domain.dll
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/Debug/net7.0/refint/POS.Domain.dll
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/Debug/net7.0/POS.Domain.pdb
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/Debug/net7.0/POS.Domain.genruntimeconfig.cache
+/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/Debug/net7.0/ref/POS.Domain.dll

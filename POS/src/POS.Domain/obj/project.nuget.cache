@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qk6T8jGA7EwWw3iza2S6+0Kw2MSe9z5FJhv/SsM7ipjX03KFdh6/owRyJi0G3MsYo76UCw3pA9XnCnoK3bSSsg==",
+  "dgSpecHash": "KnEkrBWDQFokqYpdc3V6AyVJKEvIJpI21GzMiyc2MJ6wiBM04ZwbPryuwWRsuoaYCKmpr8KhaelMM0GEbmy+pg==",
   "success": true,
   "projectFilePath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj",
   "expectedPackageFiles": [
