@@ -33,3 +33,5 @@ public class UnitOfWork : IUnitOfWork
         await _context.SaveChangesAsync();
     }
 }
+
+// imcorporando tanto de patron de repositorio generico
