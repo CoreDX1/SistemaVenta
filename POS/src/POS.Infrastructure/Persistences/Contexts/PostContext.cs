@@ -59,25 +59,6 @@ public partial class PostContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-
-
-        modelBuilder.Entity<UsersBranchOffice>(entity =>
-        {
-            entity.HasKey(e => e.UserBranchOfficeId).HasName("PK__UsersBra__7D1E804A22997BF4");
-
-            entity
-                .HasOne(d => d.BranchOffice)
-                .WithMany(p => p.UsersBranchOffices)
-                .HasForeignKey(d => d.BranchOfficeId)
-                .HasConstraintName("FK__UsersBran__Branc__5DCAEF64");
-
-            entity
-                .HasOne(d => d.User)
-                .WithMany(p => p.UsersBranchOffices)
-                .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__UsersBran__UserI__5EBF139D");
-        });
-
         OnModelCreatingPartial(modelBuilder);
     }
 
