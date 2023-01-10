@@ -60,16 +60,6 @@ public partial class PostContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 
-        modelBuilder.Entity<User>(entity =>
-        {
-            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CC4CE28B33A8");
-
-            entity.Property(e => e.Email).IsUnicode(false);
-            entity.Property(e => e.Image).IsUnicode(false);
-            entity.Property(e => e.Password).IsUnicode(false);
-            entity.Property(e => e.UserName).HasMaxLength(50).IsUnicode(false);
-        });
-
         modelBuilder.Entity<UserRole>(entity =>
         {
             entity.HasKey(e => e.UserRoleId).HasName("PK__UserRole__3D978A35CB25F9A4");
