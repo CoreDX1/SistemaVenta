@@ -62,12 +62,7 @@ public partial class PostContext : DbContext
 
 
 
-        modelBuilder.Entity<Role>(entity =>
-        {
-            entity.HasKey(e => e.RoleId).HasName("PK__Roles__8AFACE1AE73D374F");
-
-            entity.Property(e => e.Description).HasMaxLength(50).IsUnicode(false);
-        });
+  
 
         modelBuilder.Entity<Sale>(entity =>
         {
