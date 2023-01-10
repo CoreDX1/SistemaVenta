@@ -7,11 +7,10 @@ namespace POS.Infrastructure.Commons.Base
         private readonly int NumMaxRecordsPage = 50;
         public string Order { get; set; } = "asc";
         public string? Sort { get; set; } = null;
-        public int Records {
+        public int Records
+        {
             get => NumRecordsPage;
-            set {
-                NumRecordsPage = (value > NumMaxRecordsPage) ? NumMaxRecordsPage : value;
-            }
+            set { NumRecordsPage = (value > NumMaxRecordsPage) ? NumMaxRecordsPage : value; }
         }
     }
 }
