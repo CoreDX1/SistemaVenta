@@ -59,23 +59,6 @@ public partial class PostContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<MenuRole>(entity =>
-        {
-            entity.HasKey(e => e.MenuRolId).HasName("PK__MenuRole__6640AD0CBCE9D971");
-
-            entity
-                .HasOne(d => d.Menu)
-                .WithMany(p => p.MenuRoles)
-                .HasForeignKey(d => d.MenuId)
-                .HasConstraintName("FK_MenuRoles_Menu");
-
-            entity
-                .HasOne(d => d.Role)
-                .WithMany(p => p.MenuRoles)
-                .HasForeignKey(d => d.RoleId)
-                .HasConstraintName("FK_MenuRoles_Roles");
-        });
-
         modelBuilder.Entity<Product>(entity =>
         {
             entity.HasKey(e => e.ProductId).HasName("PK__Products__B40CC6CDC8C288AF");
