@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -18,6 +18,12 @@
     <ProjectReference Include="..\POS.Infrastructure\POS.Infrastructure.csproj" />
     <ProjectReference Include="..\POS.Utilities\POS.Utilities.csproj" />
 	  <ProjectReference Include="..\POS.Api\POS.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mappers\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

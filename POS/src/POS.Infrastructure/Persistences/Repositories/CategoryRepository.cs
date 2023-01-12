@@ -4,6 +4,7 @@ using POS.Infrastructure.Commons.Base.Request;
 using POS.Infrastructure.Commons.Base.Response;
 using POS.Infrastructure.Persistences.Contexts;
 using POS.Infrastructure.Persistences.Interfaces;
+using POS.Utilities.Static;
 
 namespace POS.Infrastructure.Persistences.Repositories;
 
@@ -57,7 +58,12 @@ public class CategoryRepository : GenericRepository<Category>, ICategoryReposito
     public async Task<IEnumerable<Category>> ListSelectCategories()
     {
         var categories = await _context.Categories
-            .Where(x => x.State.Equals(1) && x.AuditDeleteUser == null && x.AuditDeleteDate == null)
+            .Where(
+                x =>
+                    x.State.Equals((int)StateTypes.Acitve)
+                    && x.AuditDeleteUser == null
+                    && x.AuditDeleteDate == null
+            )
             .AsNoTracking()
             .ToListAsync();
         return categories;

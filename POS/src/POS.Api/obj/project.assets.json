@@ -4384,7 +4384,7 @@
     {
       "code": "NU1108",
       "level": "Error",
-      "message": "Ciclo detectado. \r\n  POS.Api -> POS.Apilication -> POS.Api.",
+      "message": "Cycle detected. \r\n  POS.Api -> POS.Apilication -> POS.Api.",
       "libraryId": "POS.Api",
       "targetGraphs": [
         "net7.0"
