@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "hM4n5wh/3DQ5hMo4e0Tv31zls6NylwiMVVa5dipAsc7EfPFEF6LJYw8/upq4i2nPBleBPhAckWuejOql+xasXw==",
-  "success": false,
+  "dgSpecHash": "N1pNFjx840pIRkXoMXjs+neNzDKmE1qT2JIUIw9zjXogmKtV0SwNyvqcAumWLz3XzjBI1NTYImwM8qbEpvQB8w==",
+  "success": true,
   "projectFilePath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chism\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
@@ -87,15 +87,5 @@
     "C:\\Users\\chism\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\chism\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  POS.Api -> POS.Apilication -> POS.Api.",
-      "libraryId": "POS.Api",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

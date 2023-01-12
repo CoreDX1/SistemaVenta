@@ -28,9 +28,6 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj": {
-                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj"
-              },
               "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj": {
                 "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj"
               },

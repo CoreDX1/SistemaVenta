@@ -1377,7 +1377,6 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "Azure.Storage.Blobs": "12.14.1",
           "FluentValidation.AspNetCore": "11.2.2",
-          "POS.Api": "1.0.0",
           "POS.Domain": "1.0.0",
           "POS.Infrastructure": "1.0.0",
           "POS.Utilities": "1.0.0"
@@ -4379,16 +4378,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  POS.Api -> POS.Apilication -> POS.Api.",
-      "libraryId": "POS.Api",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  }
 }

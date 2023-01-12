@@ -10,7 +10,7 @@ namespace POS.Apilication.Interfaces;
 // Metodos para el crud?
 public interface ICategoryApplication
 {
-    Task<BaseResponse<BaseEntityReponse<CategoryRepository>>> ListCategory(
+    Task<BaseResponse<BaseEntityReponse<CategoryReponseDto>>> ListCategory(
         BaseFilterRequest filter
     );
     Task<BaseResponse<IEnumerable<CategorySelectResponseDto>>> ListSelectCategories();
