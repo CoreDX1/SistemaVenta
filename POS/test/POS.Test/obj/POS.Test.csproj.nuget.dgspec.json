@@ -1,127 +1,44 @@
 {
   "format": 1,
   "restore": {
-    "/home/core/Desktop/BackEnd/SistemaPost/POS/test/POS.Test/POS.Test.csproj": {}
+    "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\test\\POS.Test\\POS.Test.csproj": {}
   },
   "projects": {
-    "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Api/POS.Api.csproj": {
+    "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Apilication\\POS.Apilication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Api/POS.Api.csproj",
-        "projectName": "POS.Api",
-        "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Api/POS.Api.csproj",
-        "packagesPath": "/home/core/.nuget/packages/",
-        "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Api/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/core/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/POS.Apilication.csproj": {
-                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/POS.Apilication.csproj"
-              },
-              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj": {
-                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj"
-              },
-              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj": {
-                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.1, 7.0.1]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/POS.Apilication.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/POS.Apilication.csproj",
+        "projectUniqueName": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Apilication\\POS.Apilication.csproj",
         "projectName": "POS.Apilication",
-        "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/POS.Apilication.csproj",
-        "packagesPath": "/home/core/.nuget/packages/",
-        "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/obj/",
+        "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Apilication\\POS.Apilication.csproj",
+        "packagesPath": "C:\\Users\\chism\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Apilication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/core/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\chism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj": {
-                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj"
+              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj": {
+                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj"
               },
-              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj": {
-                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj"
+              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj": {
+                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj"
               },
-              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj": {
-                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj"
+              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Infrastructure\\POS.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Infrastructure\\POS.Infrastructure.csproj"
+              },
+              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj": {
+                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj"
               }
             }
           }
@@ -164,37 +81,117 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.1, 7.0.1]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj": {
+    "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj",
-        "projectName": "POS.Domain",
-        "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj",
-        "packagesPath": "/home/core/.nuget/packages/",
-        "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/",
+        "projectUniqueName": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj",
+        "projectName": "POS.Api",
+        "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj",
+        "packagesPath": "C:\\Users\\chism\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/core/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\chism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Apilication\\POS.Apilication.csproj": {
+                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Apilication\\POS.Apilication.csproj"
+              },
+              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Infrastructure\\POS.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Infrastructure\\POS.Infrastructure.csproj"
+              },
+              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj": {
+                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj",
+        "projectName": "POS.Domain",
+        "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj",
+        "packagesPath": "C:\\Users\\chism\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\chism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -235,48 +232,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.1, 7.0.1]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj": {
+    "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Infrastructure\\POS.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Infrastructure\\POS.Infrastructure.csproj",
         "projectName": "POS.Infrastructure",
-        "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj",
-        "packagesPath": "/home/core/.nuget/packages/",
-        "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Infrastructure\\POS.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\chism\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/core/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\chism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj": {
-                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj"
+              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj": {
+                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj"
               },
-              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj": {
-                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj"
+              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj": {
+                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj"
               }
             }
           }
@@ -291,10 +284,6 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[7.0.1, )"
-            },
             "System.Linq.Dynamic.Core": {
               "target": "Package",
               "version": "[1.2.24, )"
@@ -311,37 +300,33 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.1, 7.0.1]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj": {
+    "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj",
         "projectName": "POS.Utilities",
-        "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj",
-        "packagesPath": "/home/core/.nuget/packages/",
-        "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/obj/",
+        "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj",
+        "packagesPath": "C:\\Users\\chism\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/core/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\chism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -370,45 +355,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.1, 7.0.1]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/core/Desktop/BackEnd/SistemaPost/POS/test/POS.Test/POS.Test.csproj": {
+    "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\test\\POS.Test\\POS.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/test/POS.Test/POS.Test.csproj",
+        "projectUniqueName": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\test\\POS.Test\\POS.Test.csproj",
         "projectName": "POS.Test",
-        "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/test/POS.Test/POS.Test.csproj",
-        "packagesPath": "/home/core/.nuget/packages/",
-        "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/test/POS.Test/obj/",
+        "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\test\\POS.Test\\POS.Test.csproj",
+        "packagesPath": "C:\\Users\\chism\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\test\\POS.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/core/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\chism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Api/POS.Api.csproj": {
-                "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Api/POS.Api.csproj"
+              "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj": {
+                "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj"
               }
             }
           }
@@ -451,18 +432,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.1, 7.0.1]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

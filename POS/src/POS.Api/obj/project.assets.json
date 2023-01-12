@@ -1377,6 +1377,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "Azure.Storage.Blobs": "12.14.1",
           "FluentValidation.AspNetCore": "11.2.2",
+          "POS.Api": "1.0.0",
           "POS.Domain": "1.0.0",
           "POS.Infrastructure": "1.0.0",
           "POS.Utilities": "1.0.0"
@@ -1405,7 +1406,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.1",
           "POS.Domain": "1.0.0",
           "POS.Utilities": "1.0.0",
           "System.Linq.Dynamic.Core": "1.2.24"
@@ -4294,38 +4294,40 @@
     ]
   },
   "packageFolders": {
-    "/home/core/.nuget/packages/": {}
+    "C:\\Users\\chism\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Api/POS.Api.csproj",
+      "projectUniqueName": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj",
       "projectName": "POS.Api",
-      "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Api/POS.Api.csproj",
-      "packagesPath": "/home/core/.nuget/packages/",
-      "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Api/obj/",
+      "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\POS.Api.csproj",
+      "packagesPath": "C:\\Users\\chism\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/core/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\chism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/POS.Apilication.csproj": {
-              "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Apilication/POS.Apilication.csproj"
+            "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Apilication\\POS.Apilication.csproj": {
+              "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Apilication\\POS.Apilication.csproj"
             },
-            "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj": {
-              "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Infrastructure/POS.Infrastructure.csproj"
+            "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Infrastructure\\POS.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Infrastructure\\POS.Infrastructure.csproj"
             },
-            "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj": {
-              "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Utilities/POS.Utilities.csproj"
+            "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj": {
+              "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Utilities\\POS.Utilities.csproj"
             }
           }
         }
@@ -4366,12 +4368,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.1, 7.0.1]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4380,8 +4376,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1108",
+      "level": "Error",
+      "message": "Ciclo detectado. \r\n  POS.Api -> POS.Apilication -> POS.Api.",
+      "libraryId": "POS.Api",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

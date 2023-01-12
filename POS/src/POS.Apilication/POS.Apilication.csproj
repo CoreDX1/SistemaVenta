@@ -17,6 +17,7 @@
     <ProjectReference Include="..\POS.Domain\POS.Domain.csproj" />
     <ProjectReference Include="..\POS.Infrastructure\POS.Infrastructure.csproj" />
     <ProjectReference Include="..\POS.Utilities\POS.Utilities.csproj" />
+	  <ProjectReference Include="..\POS.Api\POS.Api.csproj" />
   </ItemGroup>
 
 </Project>

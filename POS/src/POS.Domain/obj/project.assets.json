@@ -3461,24 +3461,26 @@
     ]
   },
   "packageFolders": {
-    "/home/core/.nuget/packages/": {}
+    "C:\\Users\\chism\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj",
       "projectName": "POS.Domain",
-      "projectPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/POS.Domain.csproj",
-      "packagesPath": "/home/core/.nuget/packages/",
-      "outputPath": "/home/core/Desktop/BackEnd/SistemaPost/POS/src/POS.Domain/obj/",
+      "projectPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\POS.Domain.csproj",
+      "packagesPath": "C:\\Users\\chism\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chism\\OneDrive\\Desktop\\Dotnet\\SistemaVenta\\POS\\src\\POS.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/core/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\chism\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3519,18 +3521,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.1, 7.0.1]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
