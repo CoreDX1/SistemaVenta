@@ -44,14 +44,37 @@ internal class CategoryApplication : ICategoryApplication
         return response;
     }
 
-    public Task<BaseResponse<IEnumerable<CategorySelectResponseDto>>> ListSelectCategories()
+    public async Task<BaseResponse<IEnumerable<CategorySelectResponseDto>>> ListSelectCategories()
     {
-        throw new NotImplementedException();
+        var response = new BaseResponse<IEnumerable<CategorySelectResponseDto>>();
+        var categories = await _unitOfWork.Category.ListSelectCategories();
+        if(categories is not null)
+        {
+            response.isSuccess = true;
+            response.Data = _mapper.Map<IEnumerable<CategorySelectResponseDto>>(categories);
+            response.Message = ReplyMessage.MESSAGE_QUERY;
+        }
+        else
+        {
+            response.isSuccess = false;
+            response.Message = ReplyMessage.MESSAGE_QUERY_EMTY;
+        }
+        return response;
     }
 
-    public Task<BaseResponse<CategoryReponseDto>> CategoryById(int catetory)
+    public async Task<BaseResponse<CategoryReponseDto>> CategoryById(int catetory)
     {
-        throw new NotImplementedException();
+        var response = new BaseResponse<CategoryReponseDto>();
+        var category = await _unitOfWork.Category.CategoryById(catetory);
+        if(category is not null){
+            response.isSuccess = true;
+            response.Data = _mapper.Map<CategoryReponseDto>(category);
+            response.Message = ReplyMessage.MESSAGE_QUERY;
+        }else{
+            response.isSuccess = false;
+            response.Message = ReplyMessage.MESSAGE_QUERY_EMTY;
+        }
+        return response;
     }
 
     public Task<BaseResponse<bool>> RegisterCategory(CategoryRequestDto requestDto)
